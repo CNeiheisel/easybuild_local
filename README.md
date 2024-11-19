@@ -2,6 +2,10 @@
 
 This guide will help you get started with using the EasyBuild repository for local software installations on the Michigan State University (MSU) High Performace Computing Center (HPCC). Follow the steps below to set up your environment, build software, and manage your installations.
 
+# WARNING
+
+Older tool chains may cause errors while downloading. Some EB files as early as 2021b have been successfully downloaded, but earlier toolchains could cause traceback errors. 
+
 ### Table of Contents
 - [First Time Setup Guide](#first-time-setup-guide)
   - [1. Clone the Repository](#1-clone-the-repository)
