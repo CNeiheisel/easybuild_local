@@ -98,6 +98,16 @@ eb -S <SOFTWARE>
 This command searches for EasyBuild files with the name of <SOFTWARE> that are available to download.
 ![image](https://github.com/user-attachments/assets/947789f9-f63c-434e-af1c-91903225e00a)
 
+Once you have found the EasyBuild file you want to download, run:
+
+```
+eb -M <FILENAME>.eb
+```
+This command shows all the dependencies that are needed to download to run the EasyBuild file.
+
+![image](https://github.com/user-attachments/assets/94f845f3-2e30-4b96-aca2-a3a0272f52b5)
+
+
 
 
 ## Optional Steps
