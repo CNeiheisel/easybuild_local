@@ -5,6 +5,7 @@ This guide will help you get started with using the EasyBuild repository for loc
 # WARNING
 
 Older tool chains may cause errors while downloading. Some EB files as early as 2021b have been successfully downloaded, but earlier toolchains could cause traceback errors. 
+![image](https://github.com/user-attachments/assets/a93a07f7-0968-48f6-aa7a-460003c06c64)
 
 ### Table of Contents
 - [First Time Setup Guide](#first-time-setup-guide)
