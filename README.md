@@ -52,25 +52,25 @@ source activate_easybuild_local.sh
 
 This will load EasyBuild and configure it to use the paths defined in `config.cfg`.
 
-## 3. Install Software Locally
+## 3. Install Software on the HPCC
 
-Once your environment is set up, you can start installing software locally using EasyBuild. The repository contains EasyBuild configuration files (`.eb` files) for several software packages in the `easyconfigs/` directory.
+Once your environment is set up, you can start installing software on the HPCC using EasyBuild. The repository contains EasyBuild configuration files (`.eb` files) for several software packages in the `easyconfigs/` directory.
 
 To install a software package, run:
 
 ```
-eb --parallel=8 --robot ./easyconfigs/<FILENAME>.eb
+eb --parallel=8 --robot <FILENAME>.eb
 ```
 
-Replace `<FILENAME>` with the name of the configuration file you want to build.
+Replace `<FILENAME>` with the name of the configuration file you want to build. The parallel command determines the amount of cores used while downloading and the robot command tells the program to download the software and all of its dependencies.
 
 For example, you can run the example eb file provided by typing the following:
 
 ```
-eb --parallel=8 --robot ./easyconfigs/Hello-2.10-GCCcore-11.2.0.eb 
+eb --parallel=8 --robot BWA-0.7.17-GCCcore-11.2.0.eb
 ```
 
-## 4. Use Locally Installed Software
+## 4. Use Installed Software
 
 After the installation is complete, you can make the locally installed software available by running the following script:
 
@@ -83,62 +83,22 @@ This adds the locally installed modules to the module search path, allowing you 
 For example, to load the provided example, you would run:
 
 ```
-module load Hello/2.10-GCCcore-11.2.0
+module load BWA-0.7.17-GCCcore-11.2.0.eb
 ```
 
-Now that the module is loaded, you can use the software as needed. For this example, you can run:
+
+
+## 5 Installing Dependencies and Finding EB Files
+
+In order to find dependencies that are required to download and find software on the HPCC, there are a few EasyBuild commands that are helpful.
 
 ```
-hello
+eb -S <SOFTWARE>
 ```
+This command searches for EasyBuild files with the name of <SOFTWARE> that are available to download.
+![image](https://github.com/user-attachments/assets/947789f9-f63c-434e-af1c-91903225e00a)
 
-And you should see the following output:
 
-```
-Hello, world!
-```
-
-## Hello World Example
-
-This repository includes a simple "Hello, World!" example to demonstrate the process of building and installing software using EasyBuild. These are similar to the steps above.
-
-1. Clone the repository and navigate to the directory:
-
-```
-git clone https://github.com/colbrydi/easybuild_local.git
-cd easybuild_local
-```
-
-2. Set up your environment:
-
-```
-source activate_easybuild_local.sh
-```
-
-3. Install the "Hello, World!" software:
-
-```
-eb --parallel=8 --robot ./easyconfigs/Hello-2.10-GCCcore-11.2.0.eb
-```
-
-4. Use the locally installed software:
-
-```
-source eb_local_use.sh
-module load Hello/2.10-GCCcore-11.2.0
-```
-
-5. Run the software:
-
-```
-hello
-```
-
-You should see the output:
-
-```
-Hello, world!
-```
 
 ## Optional Steps
 
