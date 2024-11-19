@@ -107,6 +107,14 @@ This command shows all the dependencies that are needed to download to run the E
 
 ![image](https://github.com/user-attachments/assets/94f845f3-2e30-4b96-aca2-a3a0272f52b5)
 
+To download the dependencies, run:
+
+```
+eb --parallel=8 <FILENAME>.eb
+```
+This command downloads the dependency.
+![image](https://github.com/user-attachments/assets/21c9a5f7-ccb7-4b6d-aa84-78f1ac654f2b)
+
 
 
 
