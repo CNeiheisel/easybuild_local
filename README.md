@@ -96,6 +96,7 @@ In order to find dependencies that are required to download and find software on
 eb -S <SOFTWARE>
 ```
 This command searches for EasyBuild files with the name of <SOFTWARE> that are available to download.
+
 ![image](https://github.com/user-attachments/assets/947789f9-f63c-434e-af1c-91903225e00a)
 
 Once you have found the EasyBuild file you want to download, run:
@@ -113,6 +114,7 @@ To download the dependencies, run:
 eb --parallel=8 <FILENAME>.eb
 ```
 This command downloads the dependency. When downloading the dependencies, make sure to download the dependency that has the same <FILENAME>.eb as the eb -M search last. In this case, I would download the dependency RNA-SeQC-1.1.8-GCCcore-11.2.0-Java-11.eb last.
+
 ![image](https://github.com/user-attachments/assets/21c9a5f7-ccb7-4b6d-aa84-78f1ac654f2b)
 
 
