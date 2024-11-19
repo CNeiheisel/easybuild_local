@@ -103,16 +103,16 @@ Once you have found the EasyBuild file you want to download, run:
 ```
 eb -M <FILENAME>.eb
 ```
-This command shows all the dependencies that are needed to download to run the EasyBuild file.
+This command shows all the dependencies that are needed to download to run the EasyBuild file. 
 
 ![image](https://github.com/user-attachments/assets/94f845f3-2e30-4b96-aca2-a3a0272f52b5)
 
-To download the dependencies, run:
+When downloading the dependencies, make sure to download the dependency that has the same <FILENAME>.eb as the eb -M search last. To download the dependencies, run:
 
 ```
 eb --parallel=8 <FILENAME>.eb
 ```
-This command downloads the dependency.
+This command downloads the dependency. 
 ![image](https://github.com/user-attachments/assets/21c9a5f7-ccb7-4b6d-aa84-78f1ac654f2b)
 
 
