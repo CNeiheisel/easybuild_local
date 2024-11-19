@@ -107,12 +107,12 @@ This command shows all the dependencies that are needed to download to run the E
 
 ![image](https://github.com/user-attachments/assets/94f845f3-2e30-4b96-aca2-a3a0272f52b5)
 
-When downloading the dependencies, make sure to download the dependency that has the same <FILENAME>.eb as the eb -M search last. In this case, I would download the dependency RNA-SeQC-1.1.8-GCCcore-11.2.0-Java-11.eb last. To download the dependencies, run:
+To download the dependencies, run:
 
 ```
 eb --parallel=8 <FILENAME>.eb
 ```
-This command downloads the dependency. 
+This command downloads the dependency. When downloading the dependencies, make sure to download the dependency that has the same <FILENAME>.eb as the eb -M search last. In this case, I would download the dependency RNA-SeQC-1.1.8-GCCcore-11.2.0-Java-11.eb last.
 ![image](https://github.com/user-attachments/assets/21c9a5f7-ccb7-4b6d-aa84-78f1ac654f2b)
 
 
