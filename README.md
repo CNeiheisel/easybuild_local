@@ -170,7 +170,9 @@ This command downloads the dependency. When downloading the dependencies, make s
 
 ![image](https://github.com/user-attachments/assets/21c9a5f7-ccb7-4b6d-aa84-78f1ac654f2b)
 
+## 3 The Robot Command
 
+Dowloading all the necessary dependencies can be very tedious. In order to download all the dependencies and the EasyBuild file at once, use
 
 
 ## Optional Steps
