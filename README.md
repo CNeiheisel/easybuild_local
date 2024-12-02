@@ -55,7 +55,7 @@ To install a software package, run:
 eb --parallel=8 --robot ./easyconfigs/<FILENAME>.eb
 ```
 
-Replace `<FILENAME>` with the name of the configuration file you want to build.
+The parallel command determines how many cores are being used and robot automatically downloads all of the dependencies in an EasyBuild config. Replace `<FILENAME>` with the name of the configuration file you want to build.
 
 For example, you can run the example eb file provided by typing the following:
 
@@ -174,6 +174,15 @@ This command downloads the dependency. When downloading the dependencies, make s
 
 Dowloading all the necessary dependencies can be very tedious. In order to download all the dependencies and the EasyBuild file at once, use
 
+```
+eb --parallel=8 --robot <FILENAME>.eb
+```
+
+This allows all the dependencies to be downloaded at once rather than having to download them individually.
+
+![image](https://github.com/user-attachments/assets/c4252f6a-fb2f-49cf-a693-1f4de09c1321)
+
+![image](https://github.com/user-attachments/assets/a3ed2ab4-d66f-43c8-898c-3577fa215cc6)
 
 ## Optional Steps
 
