@@ -134,10 +134,10 @@ Hello, world!
 ```
 
 
-## Downloading From the System Repository
+### Downloading From the System Repository
 
 
-## 1 Finding EB Files
+## 1. Finding EB Files
 
 In order to find dependencies that are required to download and find software on the HPCC, there is an EasyBuild command that is helpful
 
@@ -150,7 +150,7 @@ This command searches for EasyBuild files with the name of <SOFTWARE> that are a
 
 
 
-## 2 Downloading and Finding Dependencies
+## 2. Downloading and Finding Dependencies
 
 Once you have found the EasyBuild file you want to download, run:
 
@@ -170,7 +170,7 @@ This command downloads the dependency. When downloading the dependencies, make s
 
 ![image](https://github.com/user-attachments/assets/21c9a5f7-ccb7-4b6d-aa84-78f1ac654f2b)
 
-## 3 The Robot Command
+## 3. The Robot Command
 
 Dowloading all the necessary dependencies can be very tedious. In order to download all the dependencies and the EasyBuild file at once, use
 
@@ -180,7 +180,7 @@ eb --parallel=8 --robot <FILENAME>.eb
 
 This allows all the dependencies to be downloaded at once rather than having to download them individually.
 
-![image](https://github.com/user-attachments/assets/c4252f6a-fb2f-49cf-a693-1f4de09c1321)
+![image](https://github.com/user-attachments/assets/f898bcf5-a529-4e9e-b88b-8f08af15652d)
 
 ![image](https://github.com/user-attachments/assets/a3ed2ab4-d66f-43c8-898c-3577fa215cc6)
 
