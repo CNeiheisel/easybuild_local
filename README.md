@@ -134,7 +134,7 @@ Hello, world!
 ```
 
 
-### Downloading From the System Repository
+## Downloading From the System Repository
 
 
 ## 1. Finding EB Files
