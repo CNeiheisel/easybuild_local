@@ -180,7 +180,8 @@ eb --parallel=8 --robot <FILENAME>.eb
 
 This allows all the dependencies to be downloaded at once rather than having to download them individually.
 
-![image](https://github.com/user-attachments/assets/3c989b43-c794-417e-8dc3-c029ffa75803)
+![image](https://github.com/user-attachments/assets/4d47a467-f488-4b14-992e-33e4b0e06b8d)
+
 
 
 
