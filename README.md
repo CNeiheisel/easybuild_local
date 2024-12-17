@@ -26,12 +26,14 @@ First, clone the repository to your home directory on the HPCC:
 ```
 git clone https://github.com/colbrydi/easybuild_local.git
 ```
+![image](https://github.com/user-attachments/assets/c5fd7481-f3d0-43e1-b804-7475bf664c41)
 
 Navigate to the repository directory:
 
 ```
 cd easybuild_local
 ```
+![image](https://github.com/user-attachments/assets/b3c3f304-2f27-4420-84d3-bb618b76638e)
 
 ## 2. Set Up Your Environment
 
@@ -42,6 +44,7 @@ Run the following command:
 ```
 source activate_easybuild_local.sh
 ```
+![image](https://github.com/user-attachments/assets/c056fccb-fdf6-4b81-bce6-c70a7ba4805e)
 
 This will load EasyBuild and configure it to use the paths defined in `config.cfg`.
 
@@ -62,6 +65,9 @@ For example, you can run the example eb file provided by typing the following:
 ```
 eb --parallel=8 --robot ./easyconfigs/Hello-2.10-GCCcore-11.2.0.eb 
 ```
+![image](https://github.com/user-attachments/assets/5ff6d5aa-ccf2-480e-8f57-e531f2879ede)
+
+![image](https://github.com/user-attachments/assets/3126a68a-d1d5-4697-83c7-5f19818d04e5)
 
 ## 4. Use Locally Installed Software
 
@@ -70,6 +76,7 @@ After the installation is complete, you can make the locally installed software 
 ```
 source eb_local_use.sh
 ```
+![image](https://github.com/user-attachments/assets/9ef58728-b1d9-4c6b-906d-426084afb1b7)
 
 This adds the locally installed modules to the module search path, allowing you to load and use them.
 
@@ -78,6 +85,7 @@ For example, to load the provided example, you would run:
 ```
 module load Hello/2.10-GCCcore-11.2.0
 ```
+![image](https://github.com/user-attachments/assets/3ceb9046-46d5-42e6-b352-c29aa66b28a1)
 
 Now that the module is loaded, you can use the software as needed. For this example, you can run:
 
@@ -90,6 +98,7 @@ And you should see the following output:
 ```
 Hello, world!
 ```
+![image](https://github.com/user-attachments/assets/55311554-5901-488b-939b-62c34767f2aa)
 
 ## Hello World Example
 
