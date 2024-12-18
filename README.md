@@ -50,6 +50,8 @@ This will load EasyBuild and configure it to use the paths defined in `config.cf
 
 ## 3. Install Software Locally
 
+NOTE: This tutorial teaches how to download and install files in the easyconfig directory. Later on there are instructions on how to download and install files from the HPCC system repository. 
+
 Once your environment is set up, you can start installing software locally using EasyBuild. The repository contains EasyBuild configuration files (`.eb` files) for several software packages in the `easyconfigs/` directory.
 
 To install a software package, run:
