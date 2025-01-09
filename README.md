@@ -124,13 +124,7 @@ hello
 This prints Hello, world!
 
 ## Downloading From the System Repository
-git clone https://github.com/colbrydi/easybuild_local.git
-cd easybuild_local
-source activate_easybuild_local.sh
-eb --parallel=8 --robot ./easyconfigs/Hello-2.10-GCCcore-11.2.0.eb
-source eb_local_use.sh
-module load Hello/2.10-GCCcore-11.2.0
-hello
+
 ## 1. Finding EB Files
 
 In order to find dependencies that are required to download and find software on the HPCC, there is an EasyBuild command that is helpful
