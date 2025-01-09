@@ -234,7 +234,7 @@ Older tool chains may cause errors while downloading. Some EB files as early as 
 
 # Updating Config Files
 
-Toolchains that are old or cause errors can be updated. There are two commands that can update EasyBuild files in order to be downloaded
+Toolchains that are old or cause errors can be updated. There are two commands that can update EasyBuild files in order to be downloaded.
 
 ```
 --experimental --try-update-deps
