@@ -106,44 +106,22 @@ Hello, world!
 
 This repository includes a simple "Hello, World!" example to demonstrate the process of building and installing software using EasyBuild. These are similar to the steps above.
 
-1. Clone the repository and navigate to the directory:
-
 ```
 git clone https://github.com/colbrydi/easybuild_local.git
+
 cd easybuild_local
-```
 
-2. Set up your environment:
-
-```
 source activate_easybuild_local.sh
-```
 
-3. Install the "Hello, World!" software:
-
-```
 eb --parallel=8 --robot ./easyconfigs/Hello-2.10-GCCcore-11.2.0.eb
-```
 
-4. Use the locally installed software:
-
-```
 source eb_local_use.sh
 module load Hello/2.10-GCCcore-11.2.0
-```
 
-5. Run the software:
-
-```
 hello
-```
-
-You should see the output:
 
 ```
-Hello, world!
-```
-
+This prints Hello World!
 
 ## Downloading From the System Repository
 
