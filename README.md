@@ -233,6 +233,28 @@ Older tool chains may cause errors while downloading. Some EB files as early as 
 
 ![image](https://github.com/user-attachments/assets/72664976-448e-41be-8c51-3e0c297f0011)
 
+# Updating Config Files
+
+Toolchains that are old or cause errors can be updated. There are two commands that can update EasyBuild files in order to be downloaded
+
+```
+--experimental --try-update-deps
+```
+
+This command updates the dependencies in order to successfully download the file if it previously failed. 
+
+![image](https://github.com/user-attachments/assets/e1681f04-9cb6-43c5-b382-9fcd7f3741bb)
+
+```
+--try-toolchain-version <VERSION>
+```
+
+This command specifically updates the toolchain version in order to try a different version of the toolchain to see if the download will be successful. In the example below, the earlier toolchain version GCCcore-12.3.0 was used after the download on GCCcore-11.3.0 failed.
+
+![image](https://github.com/user-attachments/assets/2c024630-3549-4f8c-a74c-7ad0d5ce963d)
+![image](https://github.com/user-attachments/assets/1af460d3-e935-448c-93cf-6fb8ef2cedc1)
+
+
 
 ## Additional Resources
 
