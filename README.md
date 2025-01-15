@@ -257,3 +257,4 @@ This command specifically updates the toolchain to see if download will be succe
 #### Editors
 
 Nick Panchy
+Connor Neiheisel
