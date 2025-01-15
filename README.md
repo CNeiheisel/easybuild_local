@@ -253,3 +253,7 @@ This command specifically updates the toolchain to see if download will be succe
 
 - [EasyBuild Documentation](https://easybuild.readthedocs.io/)
 - [EasyBuild EasyConfigs](https://github.com/easybuilders/easybuild-easyconfigs)
+
+#### Editors
+
+Nick Panchy
