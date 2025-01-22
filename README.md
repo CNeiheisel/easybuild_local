@@ -293,7 +293,7 @@ which R
 ## R Installation on dev-intel18
 
  1. Repeat steps from dev-intel16, but change intel-16 to intel-18
- 2. At Step 6, make sure that is pointing to a different R install in "software" than intel16.
+ 2. At Step 6, make sure that it is pointing to a different R install in "software" than intel16.
 
 ## Optional Steps
 
