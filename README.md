@@ -211,6 +211,7 @@ To download the R 4.4.1 GitHub file, run:
 ```
 wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/heads/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb
 ```
+(URL is from https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb)
 Replace the URL with the appropriate R GitHub file if needed.
 
 Move the download to the easyconfigs folder:
@@ -282,7 +283,7 @@ R
 And you should be able to use R as needed.
 
 
-## 6. Check that the working version of R points a install path with intel16 in the name:
+6. Double check that the working version of R points a install path with intel16 in the name:
 
 
 ```
