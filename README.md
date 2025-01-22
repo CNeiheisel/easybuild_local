@@ -175,6 +175,125 @@ This allows all the dependencies to be downloaded at once rather than having to 
 
 ![image](https://github.com/user-attachments/assets/a3ed2ab4-d66f-43c8-898c-3577fa215cc6)
 
+# Steps for R intel16/intel18 install
+
+
+## R Installation on dev-intel16
+
+## 1. Open dev-intel16
+
+
+```
+ssh dev-intel16
+```
+
+Navigate to the repository directory:
+
+```
+cd easybuild_local
+```
+
+## 2. Set Up Your Environment
+
+Run the following command:
+
+```
+source activate_easybuild_local.sh
+```
+
+This will load EasyBuild and configure it to use the paths defined in `config.cfg`.
+
+## 3. Download R File Locally
+
+
+To download the R 4.4.1 GitHub file, run:
+
+```
+wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/heads/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb
+```
+Replace the URL with the appropriate R GitHub file if needed.
+
+Move the download to the easyconfigs folder:
+
+```
+mv R/4.4.1-gfbf-2023b.eb easyconfigs
+```
+
+Open the file:
+
+```
+vi R-4.4.1-gfbf-2023b.eb
+```
+Make the following edits to include intel-16:
+
+```
+version = '4.4.1-intel16'
+toolchain = {'name': 'intel', 'version': '16'}
+versionsuffix
+
+```
+
+Save a copy of the file to include intel16:
+
+```
+cp R-4.4.1-gfbf-2023b.eb R-4.4.1-gfbf-2023b-intel16.eb
+```
+
+
+## 4. Install R
+
+Run the following command to install R-4.4.1 using the new .eb file on dev-intel16:
+
+```
+eb --parallel=8 --robot ./easyconfigs/R-4.4.1-gfbf-2023b-intel16.eb
+```
+Check that a new module with intel16 exists:
+
+```
+ls ./software/modules/all 
+```
+
+## 5. Use Locally Installed Software
+
+Navigate to the R folder:
+
+```
+cd ./software/modules/all/R
+```
+
+After the installation is complete, you can make the locally installed software available by running the following script:
+
+```
+module use ~/easybuild_local/software/modules/all
+```
+
+To load the new module, run the following script:
+
+```
+module load R/4.4.1-gfbf-2023bintel16.lua
+```
+
+Now that the module is loaded, you can use the software as needed. For this example, you can run:
+
+```
+R
+```
+
+And you should be able to use R as needed.
+
+
+## 6. Check that the working version of R points a install path with intel16 in the name:
+
+
+```
+which R
+```
+
+## R Installation on dev-intel18
+
+ 1. Repeat steps from dev-intel16, but change intel-16 to intel-18
+ 2. At Step 6, make sure that is pointing to a different R install in "software" than intel16.
+
 ## Optional Steps
 
 ## Reset the Environment (Optional)
