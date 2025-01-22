@@ -175,7 +175,7 @@ This allows all the dependencies to be downloaded at once rather than having to 
 
 ![image](https://github.com/user-attachments/assets/a3ed2ab4-d66f-43c8-898c-3577fa215cc6)
 
-# Steps for R intel16/intel18 install
+## Steps for R intel16/intel18 install
 
 
 ## R Installation on dev-intel16
