@@ -290,9 +290,15 @@ And you should be able to use R as needed.
 which R
 ```
 
+You should see something like:
+
+```
+/mnt/ufs18/home-067/nguye922/easybuild_local/software/software/R/4.4.1-gfbf-2023bintel16/bin/R
+```
+
 ## R Installation on dev-intel18
 
- 1. Repeat steps from dev-intel16, but change intel-16 to intel-18
+ 1. Repeat steps from dev-intel16, but change intel-16 to intel-18.
  2. At Step 6, make sure that it is pointing to a different R install in "software" than intel16.
 
 ## Optional Steps
