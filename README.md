@@ -283,8 +283,9 @@ R
 And you should be able to use R as needed.
 
 
-6. Double check that the working version of R points a install path with intel16 in the name:
+## 6. Verify
 
+Double check that the working version of R points a install path with intel16 in the name:
 
 ```
 which R
