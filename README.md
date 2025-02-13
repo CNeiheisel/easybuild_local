@@ -175,19 +175,19 @@ This allows all the dependencies to be downloaded at once rather than having to 
 
 ![image](https://github.com/user-attachments/assets/a3ed2ab4-d66f-43c8-898c-3577fa215cc6)
 
-# Installing Software from a GitHub Commit using EasyBuild
+## Installing Software from a GitHub Commit using EasyBuild
 
 This guide explains how to install software from a specific commit in the EasyBuild repository. For this example, we will use OpenFOAM v2112.
 
 ## 1. Locate the File
 
-Find the software you want to install in the easyconfigs folder: https://github.com/easybuilders/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs
-Example for OpenFOAM v2112: https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2112-foss-2023a.eb
+- Find the software you want to install in the easyconfigs folder: https://github.com/easybuilders/easybuild-easyconfigs/tree/develop/easybuild/easyconfigs
+- Example for OpenFOAM v2112: https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2112-foss-2023a.eb
 
 ## 2. Find the Most Recent Commit
-Click on **History** to view previous commits to the file.
-Identify the most recent commit that you want to install from.
-Copy the full commit SHA (a long alphanumeric string).
+- Click on **History** to view previous commits to the file.
+- Identify the most recent commit that you want to install from.
+- Copy the full commit SHA (a long alphanumeric string).
 
 ## 3. Install the Software Using the Commit
 Use the following command to download the software from the commit:
