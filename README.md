@@ -202,6 +202,8 @@ For OpenFOAM v2112, the command looks like this:
 eb --from-commit 70e5f79258b1cb9a429525b774e4131486210e18 OpenFOAM-v2112-foss-2023a.eb
 ```
 
+Note: Installations may take a while so it is recommended to perform this on an Interactive Desktop.
+
 ## Steps for R intel16/intel18 install
 
 
