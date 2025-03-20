@@ -339,25 +339,39 @@ This guide explains how to install software from a pull request in the EasyBuild
 
 
 ## 1. Locating the Easyconfig file
-  Go to https://github.com/easybuilders/easybuild-easyconfigs and click on the easybuild/easyconfigs folder. ![image](https://github.com/user-attachments/assets/d5fd2fa3-b48f-4793-a479-6f3f4fd71b5c)
+  Go to https://github.com/easybuilders/easybuild-easyconfigs and click on the easybuild/easyconfigs folder. 
+  
+  ![image](https://github.com/user-attachments/assets/d5fd2fa3-b48f-4793-a479-6f3f4fd71b5c)
+
   
   Scroll through and click on the easybuild configuration you want to download. In this example we want OpenFOAM-v2112-foss-2023a.eb ![image](https://github.com/user-attachments/assets/022657d2-1eb8-4aa6-81b6-1867aa94d1e1)
 
 
 
 ## 2. Find the Most Recent Pull Request
-Once you find the file you want to download, click on the history button in the top right corner. ![image](https://github.com/user-attachments/assets/ee013b77-8929-400f-893b-0cc12f27193d)
+Once you find the file you want to download, click on the history button in the top right corner. 
 
-Once on the commits screen, click on the commit you want to download. In this case, the “fix dependency” version is being downloaded.![image](https://github.com/user-attachments/assets/d4b258d0-ad22-4ebe-91de-9b7b2b8aa563)
+![image](https://github.com/user-attachments/assets/ee013b77-8929-400f-893b-0cc12f27193d)
 
-The pull number will be found in the top left corner next to the blue “develop”. The pull number for this OpenFOAM easyconfig is 22241.![image](https://github.com/user-attachments/assets/c88a0163-050a-4c71-8cea-e6a178486351)
+
+Once on the commits screen, click on the commit you want to download. In this case, the “fix dependency” version is being downloaded.
+
+![image](https://github.com/user-attachments/assets/d4b258d0-ad22-4ebe-91de-9b7b2b8aa563)
+
+
+The pull number will be found in the top left corner next to the blue “develop”. The pull number for this OpenFOAM easyconfig is 22241.
+
+![image](https://github.com/user-attachments/assets/c88a0163-050a-4c71-8cea-e6a178486351)
 
 
 
 
 ## 3. Install the Software Using the Pull Request Number
 To download OpenFOAM from the pull request number, run eb --from-pr [pull request number] --robot
-In this case I would run eb --from-pr 22241 --robot. ![image](https://github.com/user-attachments/assets/9dc3a108-e60f-454f-b700-e167579d7057)
+In this case I would run eb --from-pr 22241 --robot. 
+
+![image](https://github.com/user-attachments/assets/9dc3a108-e60f-454f-b700-e167579d7057)
+
 
 Note: It is recommended to download the EasyConfig file on the HPCC Interactive Desktop because some downloads may take hours.
 
