@@ -8,11 +8,17 @@ This guide will help you get started with using the EasyBuild repository for loc
   - [2. Set Up Your Environment](#2-set-up-your-environment)
   - [3. Install Software Locally](#3-install-software-locally)
   - [4. Use Locally Installed Software](#4-use-locally-installed-software)
+-[Downloading From the System Repository](#Downloading-From-the-System-Repository)
+-[Installing Software from a GitHub Commit using EasyBuild](#Installing-Software-from-a-GitHub-Commit-using-EasyBuild)
+-[Installing Software from a GitHub Pull Request using EasyBuild](#Installing-Software-from-a-GitHub-Pull-Request-using-EasyBuild)
+-[Steps for R intel16/intel18 install](#Steps-for-R-intel16/intel18-install)
 - [Hello World Example](#hello-world-example)
 - [Optional Steps](#optional-steps)
   - [Reset the Environment (Optional)](#reset-the-environment-optional)
   - [Manage Conda Environments (Optional)](#manage-conda-environments-optional)
   - [Troubleshooting](#troubleshooting)
+  - [WARNING](#WARNING)
+  - [Updating Config Files](#Updating-Config-Files)
 - [Additional Resources](#additional-resources)
 
 If this is your first time using EasyBuild or havn't used it in a while, I suggest you take a look at the [EasyBuild and Module System Terminology and Commands](terminology.md) to get a better understanding of the terms used in this guide and what is happening behind the scenes when running these commands. If you feel confident in your understanding of EasyBuild, you can skip to the [Hello World Example](#hello-world-example) to make sure everything is working correctly.
@@ -204,6 +210,49 @@ eb --from-commit 70e5f79258b1cb9a429525b774e4131486210e18 OpenFOAM-v2112-foss-20
 
 Note: Installations may take a while so it is recommended to perform this on an Interactive Desktop.
 
+
+## Installing Software from a GitHub Pull Request using EasyBuild
+
+This guide explains how to install software from a pull request in the EasyBuild repository. For this example, we will use OpenFOAM v2112.
+
+
+## 1. Locating the Easyconfig file
+  Go to https://github.com/easybuilders/easybuild-easyconfigs and click on the easybuild/easyconfigs folder. 
+  
+  ![image](https://github.com/user-attachments/assets/d5fd2fa3-b48f-4793-a479-6f3f4fd71b5c)
+
+  
+  Scroll through and click on the easybuild configuration you want to download. In this example we want OpenFOAM-v2112-foss-2023a.eb ![image](https://github.com/user-attachments/assets/022657d2-1eb8-4aa6-81b6-1867aa94d1e1)
+
+
+
+## 2. Find the Most Recent Pull Request
+Once you find the file you want to download, click on the history button in the top right corner. 
+
+![image](https://github.com/user-attachments/assets/ee013b77-8929-400f-893b-0cc12f27193d)
+
+
+Once on the commits screen, click on the commit you want to download. In this case, the “fix dependency” version is being downloaded.
+
+![image](https://github.com/user-attachments/assets/d4b258d0-ad22-4ebe-91de-9b7b2b8aa563)
+
+The pull number will be found in the top left corner next to the blue “develop”. The pull number for this OpenFOAM easyconfig is 22241.
+
+![image](https://github.com/user-attachments/assets/c88a0163-050a-4c71-8cea-e6a178486351)
+
+
+
+## 3. Install the Software Using the Pull Request Number
+To download OpenFOAM from the pull request number, run eb --from-pr [pull request number] --robot
+In this case I would run eb --from-pr 22241 --robot. 
+
+![image](https://github.com/user-attachments/assets/9dc3a108-e60f-454f-b700-e167579d7057)
+
+
+Note: It is recommended to download the EasyConfig file on the HPCC Interactive Desktop because some downloads may take hours.
+
+
+
 ## Steps for R intel16/intel18 install
 
 
@@ -330,50 +379,6 @@ You should see something like:
 
  1. Repeat steps from dev-intel16, but change intel-16 to intel-18.
  2. At Step 6, make sure that it is pointing to a different R install in "software" than intel16.
-
-
-
-## Installing Software from a GitHub Pull Request using EasyBuild
-
-This guide explains how to install software from a pull request in the EasyBuild repository. For this example, we will use OpenFOAM v2112.
-
-
-## 1. Locating the Easyconfig file
-  Go to https://github.com/easybuilders/easybuild-easyconfigs and click on the easybuild/easyconfigs folder. 
-  
-  ![image](https://github.com/user-attachments/assets/d5fd2fa3-b48f-4793-a479-6f3f4fd71b5c)
-
-  
-  Scroll through and click on the easybuild configuration you want to download. In this example we want OpenFOAM-v2112-foss-2023a.eb ![image](https://github.com/user-attachments/assets/022657d2-1eb8-4aa6-81b6-1867aa94d1e1)
-
-
-
-## 2. Find the Most Recent Pull Request
-Once you find the file you want to download, click on the history button in the top right corner. 
-
-![image](https://github.com/user-attachments/assets/ee013b77-8929-400f-893b-0cc12f27193d)
-
-
-Once on the commits screen, click on the commit you want to download. In this case, the “fix dependency” version is being downloaded.
-
-![image](https://github.com/user-attachments/assets/d4b258d0-ad22-4ebe-91de-9b7b2b8aa563)
-
-
-The pull number will be found in the top left corner next to the blue “develop”. The pull number for this OpenFOAM easyconfig is 22241.
-
-![image](https://github.com/user-attachments/assets/c88a0163-050a-4c71-8cea-e6a178486351)
-
-
-
-
-## 3. Install the Software Using the Pull Request Number
-To download OpenFOAM from the pull request number, run eb --from-pr [pull request number] --robot
-In this case I would run eb --from-pr 22241 --robot. 
-
-![image](https://github.com/user-attachments/assets/9dc3a108-e60f-454f-b700-e167579d7057)
-
-
-Note: It is recommended to download the EasyConfig file on the HPCC Interactive Desktop because some downloads may take hours.
 
 
 ## Optional Steps
