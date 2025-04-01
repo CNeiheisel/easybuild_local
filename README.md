@@ -253,7 +253,7 @@ Note: It is recommended to download the EasyConfig file on the HPCC Interactive 
 
 
 
-## Steps for R intel16/intel18 install
+## Installing Under Different Architectures
 
 
 ## R Installation on dev-intel16
@@ -279,8 +279,6 @@ Run the following command:
 source activate_easybuild_local.sh
 ```
 
-This will load EasyBuild and configure it to use the paths defined in `config.cfg`.
-
 ## 3. Download R File Locally
 
 
@@ -292,10 +290,11 @@ wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/h
 (URL is from https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb)
 Replace the URL with the appropriate R GitHub file if needed.
 
-Move the download to the easyconfigs folder:
+Change the directory to the easyconfigs folder and move the R download:
 
 ```
-mv R/4.4.1-gfbf-2023b.eb easyconfigs
+cd easyconfigs
+mv R-4.4.1-gfbf-2023b.eb easyconfigs
 ```
 
 Open the file:
@@ -303,7 +302,7 @@ Open the file:
 ```
 vi R-4.4.1-gfbf-2023b.eb
 ```
-Make the following edits to include intel-16:
+Make the following edits to include intel-16 (press 'i' to enter Insert mode):
 
 ```
 version = '4.4.1-intel16'
@@ -311,6 +310,7 @@ toolchain = {'name': 'intel', 'version': '16'}
 versionsuffix
 
 ```
+Press Esc and enter :wq to save and close the file.
 
 Save a copy of the file to include intel16:
 
