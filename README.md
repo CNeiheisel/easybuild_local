@@ -369,7 +369,7 @@ Double check that the working version of R points a install path with intel16 in
 which R
 ```
 
-You should see something like:
+You should see a path that points to the intel16 install:
 
 ```
 /mnt/ufs18/home-067/nguye922/easybuild_local/software/software/R/4.4.1-gfbf-2023bintel16/bin/R
