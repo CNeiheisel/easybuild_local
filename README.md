@@ -290,10 +290,9 @@ wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/h
 (URL is from https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb)
 Replace the URL with the appropriate R GitHub file if needed.
 
-Change the directory to the easyconfigs folder and move the R download:
+Move the R download to the easyconfigs folder:
 
 ```
-cd easyconfigs
 mv R-4.4.1-gfbf-2023b.eb easyconfigs
 ```
 
@@ -408,10 +407,9 @@ wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/h
 (URL is from https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb)
 Replace the URL with the appropriate R GitHub file if needed.
 
-Change the directory to the easyconfigs folder and move the R download:
+Move the R download to the easyconfigs folder:
 
 ```
-cd easyconfigs
 mv R-4.4.1-gfbf-2023b.eb easyconfigs
 ```
 
