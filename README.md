@@ -308,7 +308,6 @@ Make the following edits to include intel-16 (press 'i' to enter Insert mode):
 version = '4.4.1-intel16'
 toolchain = {'name': 'intel', 'version': '16'}
 versionsuffix
-
 ```
 Press Esc and enter :wq to save and close the file.
 
@@ -377,8 +376,121 @@ You should see a path that points to the intel16 install:
 
 ## R Installation on dev-intel18
 
- 1. Repeat steps from dev-intel16, but change intel-16 to intel-18.
- 2. At Step 6, make sure that it is pointing to a different R install in "software" than intel16.
+## 1. Open dev-intel18
+
+
+```
+ssh dev-intel18
+```
+
+Navigate to the repository directory:
+
+```
+cd easybuild_local
+```
+
+## 2. Set Up Your Environment
+
+Run the following command:
+
+```
+source activate_easybuild_local.sh
+```
+
+## 3. Download R File Locally
+
+
+To download the R 4.4.1 GitHub file, run:
+
+```
+wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/heads/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb
+```
+(URL is from https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb)
+Replace the URL with the appropriate R GitHub file if needed.
+
+Change the directory to the easyconfigs folder and move the R download:
+
+```
+cd easyconfigs
+mv R-4.4.1-gfbf-2023b.eb easyconfigs
+```
+
+Open the file:
+
+```
+vi R-4.4.1-gfbf-2023b.eb
+```
+Make the following edits to include intel-18 (press 'i' to enter Insert mode):
+
+```
+version = '4.4.1-intel18'
+toolchain = {'name': 'intel', 'version': '18'}
+versionsuffix
+```
+Press Esc and enter :wq to save and close the file.
+
+Save a copy of the file to include intel16:
+
+```
+cp R-4.4.1-gfbf-2023b.eb R-4.4.1-gfbf-2023b-intel18.eb
+```
+
+
+## 4. Install R
+
+Run the following command to install R-4.4.1 using the new .eb file on dev-intel18:
+
+```
+eb --parallel=8 --robot ./easyconfigs/R-4.4.1-gfbf-2023b-intel18.eb
+```
+Check that a new module with intel18 exists:
+
+```
+ls ./software/modules/all 
+```
+
+## 5. Use Locally Installed Software
+
+Navigate to the R folder:
+
+```
+cd ./software/modules/all/R
+```
+
+After the installation is complete, you can make the locally installed software available by running the following script:
+
+```
+module use ~/easybuild_local/software/modules/all
+```
+
+To load the new module, run the following script:
+
+```
+module load R/4.4.1-gfbf-2023bintel18.lua
+```
+
+Now that the module is loaded, you can use the software as needed. For this example, you can run:
+
+```
+R
+```
+
+And you should be able to use R as needed.
+
+
+## 6. Verify
+
+Double check that the working version of R points a install path with intel18 in the name:
+
+```
+which R
+```
+
+You should see a path that points to the intel18 install:
+
+```
+/mnt/ufs18/home-067/nguye922/easybuild_local/software/software/R/4.4.1-gfbf-2023bintel18/bin/R
+```
 
 
 ## Optional Steps
