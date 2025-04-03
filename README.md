@@ -429,7 +429,7 @@ versionsuffix
 ```
 Press Esc and enter :wq to save and close the file.
 
-Save a copy of the file to include intel16:
+Save a copy of the file to include intel18:
 
 ```
 cp R-4.4.1-gfbf-2023b.eb R-4.4.1-gfbf-2023b-intel18.eb
