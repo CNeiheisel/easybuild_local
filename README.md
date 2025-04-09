@@ -253,8 +253,8 @@ Note: It is recommended to download the EasyConfig file on the HPCC Interactive 
 
 
 
-## Installing Under Different Architectures
-
+# Installing Under Different Architectures
+This section explains how to install software for different system architectures using EasyBuild. Since some nodes have different architectures, conflicts can occur, so we will cover how there can be multiple node specific software in EasyBuild local, using R as an example.
 
 ## R Installation on dev-intel16
 
@@ -396,7 +396,7 @@ Run the following command:
 source activate_easybuild_local.sh
 ```
 
-## 3. Download R File Locally
+## 3. Download a new copy of the R File Locally
 
 
 To download the R 4.4.1 GitHub file, run:
@@ -404,8 +404,6 @@ To download the R 4.4.1 GitHub file, run:
 ```
 wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/heads/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb
 ```
-(URL is from https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb)
-Replace the URL with the appropriate R GitHub file if needed.
 
 Move the R download to the easyconfigs folder:
 
