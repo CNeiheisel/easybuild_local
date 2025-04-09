@@ -8,17 +8,18 @@ This guide will help you get started with using the EasyBuild repository for loc
   - [2. Set Up Your Environment](#2-set-up-your-environment)
   - [3. Install Software Locally](#3-install-software-locally)
   - [4. Use Locally Installed Software](#4-use-locally-installed-software)
--  [Downloading From the System Repository](#Downloading-From-the-System-Repository)
--  [Installing Software from a GitHub Commit using EasyBuild](#Installing-Software-from-a-GitHub-Commit-using-EasyBuild)
--  [Installing Software from a GitHub Pull Request using EasyBuild](#Installing-Software-from-a-GitHub-Pull-Request-using-EasyBuild)
--  [Steps for R intel16/intel18 install](#Steps-for-R-intel16/intel18-install)  
+- [Advanced Topics](#Advanced-Topics)
+  - [Downloading From the System Repository](#Downloading-From-the-System-Repository)
+  - [Installing Software from a GitHub Commit using EasyBuild](#Installing-Software-from-a-GitHub-Commit-using-EasyBuild)
+  -  [Installing Software from a GitHub Pull Request using EasyBuild](#Installing-Software-from-a-GitHub-Pull-Request-using-EasyBuild)
+  -  [Steps for R intel16/intel18 install](#Steps-for-R-intel16/intel18-install)  
 - [Hello World Example](#hello-world-example)
-- [Optional Steps](#optional-steps)
+- [Managing Your EasyBuild Local](#Managing-Your-EasyBuild-Local)
   - [Reset the Environment (Optional)](#reset-the-environment-optional)
-  - [Manage Conda Environments (Optional)](#manage-conda-environments-optional)
+- [Common Problems](#Common-Problems)
   - [Troubleshooting](#troubleshooting)
   - [WARNING](#WARNING)
-  - [Updating Config Files](#Updating-Config-Files)
+  - [Updating Config Files to a new Toolchain](#Updating-Config-Files-to-a-new-Toolchain)
 - [Additional Resources](#additional-resources)
 
 If this is your first time using EasyBuild or havn't used it in a while, I suggest you take a look at the [EasyBuild and Module System Terminology and Commands](terminology.md) to get a better understanding of the terms used in this guide and what is happening behind the scenes when running these commands. If you feel confident in your understanding of EasyBuild, you can skip to the [Hello World Example](#hello-world-example) to make sure everything is working correctly.
@@ -128,6 +129,8 @@ module load Hello/2.10-GCCcore-11.2.0
 hello
 ```
 This prints Hello, world!
+
+## Advanced Topics
 
 ## Downloading From the System Repository
 
@@ -381,7 +384,7 @@ You should see something like:
  2. At Step 6, make sure that it is pointing to a different R install in "software" than intel16.
 
 
-## Optional Steps
+## Managing Your EasyBuild Local
 
 ## Reset the Environment (Optional)
 
@@ -432,7 +435,7 @@ Older tool chains may cause errors while downloading. Some EB files as early as 
 
 ![image](https://github.com/user-attachments/assets/72664976-448e-41be-8c51-3e0c297f0011)
 
-# Updating Config Files
+# Updating Config Files to a new Toolchain
 
 Toolchains that are old or cause errors can be updated. There are two commands that can update EasyBuild files in order to be downloaded.
 
