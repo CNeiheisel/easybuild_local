@@ -304,9 +304,8 @@ vi R-4.4.1-gfbf-2023b.eb
 Make the following edits to include intel-16 (press 'i' to enter Insert mode):
 
 ```
-version = '4.4.1-intel16'
-toolchain = {'name': 'intel', 'version': '16'}
-versionsuffix
+version = '4.4.1'
+versionsuffix = 'intel16'
 ```
 Press Esc and enter :wq to save and close the file.
 
@@ -419,9 +418,8 @@ vi R-4.4.1-gfbf-2023b.eb
 Make the following edits to include intel-18 (press 'i' to enter Insert mode):
 
 ```
-version = '4.4.1-intel18'
-toolchain = {'name': 'intel', 'version': '18'}
-versionsuffix
+version = '4.4.1'
+versionsuffix = 'intel18'
 ```
 Press Esc and enter :wq to save and close the file.
 
