@@ -376,7 +376,7 @@ You should see a path that points to the intel16 install:
 ```
 
 ## R Installation on dev-intel18
-This portion will cover installation on a different development node (dev-intel18). This is similar to installation on dev-intel16, but with a few changes.
+This portion will cover installation on a different development node (dev-intel18). This is similar to installation on dev-intel16, but with a few changes specific to dev-intel18.
 
 ## 1. Open dev-intel18
 
