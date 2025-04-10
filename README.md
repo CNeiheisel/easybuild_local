@@ -399,10 +399,10 @@ Run the following command:
 source activate_easybuild_local.sh
 ```
 
-## 3. Download a new copy of the R File Locally
+## 3. Download R File Locally
 
 
-Run the following command to download a new copy of the R 4.4.1 GitHub file:
+Run the following command to download a **new copy** of the R 4.4.1 GitHub file:
 
 ```
 wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/heads/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb
