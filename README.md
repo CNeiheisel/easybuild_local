@@ -296,22 +296,25 @@ Move the R download to the easyconfigs folder:
 mv R-4.4.1-gfbf-2023b.eb easyconfigs
 ```
 
-Open the file:
+Change the directory to easyconfigs and open the R file:
 
 ```
+cd easyconfigs
 vi R-4.4.1-gfbf-2023b.eb
 ```
-Make the following edits to include intel-16 (press 'i' to enter Insert mode):
+Add the versionsuffix to include intel-16 (press 'i' to enter Insert mode):
 
 ```
+name = 'R'
 version = '4.4.1'
 versionsuffix = 'intel16'
 ```
-Press Esc and enter :wq to save and close the file.
+Press Esc and enter :wq to save and close the file. 
 
-Save a copy of the file to include intel16:
+Exit from the easyconfigs folder and save a copy of the R file to include intel16 in the name:
 
 ```
+cd ..
 cp R-4.4.1-gfbf-2023b.eb R-4.4.1-gfbf-2023b-intel16.eb
 ```
 
@@ -373,6 +376,7 @@ You should see a path that points to the intel16 install:
 ```
 
 ## R Installation on dev-intel18
+This portion will cover installation on a different development node (dev-intel18). This is similar to installation on dev-intel16, but with a few changes.
 
 ## 1. Open dev-intel18
 
@@ -398,7 +402,7 @@ source activate_easybuild_local.sh
 ## 3. Download a new copy of the R File Locally
 
 
-To download the R 4.4.1 GitHub file, run:
+Run the following command to download a new copy of the R 4.4.1 GitHub file:
 
 ```
 wget https://raw.githubusercontent.com/easybuilders/easybuild-easyconfigs/refs/heads/develop/easybuild/easyconfigs/r/R/R-4.4.1-gfbf-2023b.eb
@@ -410,29 +414,32 @@ Move the R download to the easyconfigs folder:
 mv R-4.4.1-gfbf-2023b.eb easyconfigs
 ```
 
-Open the file:
+Change the directory to easyconfigs and open the R file:
 
 ```
+cd easyconfigs
 vi R-4.4.1-gfbf-2023b.eb
 ```
-Make the following edits to include intel-18 (press 'i' to enter Insert mode):
+Add the versionsuffix to include intel-18 (instead of intel-16) (press 'i' to enter Insert mode):
 
 ```
+name = 'R'
 version = '4.4.1'
 versionsuffix = 'intel18'
 ```
-Press Esc and enter :wq to save and close the file.
+Press Esc and enter :wq to save and close the file. 
 
-Save a copy of the file to include intel18:
+Exit from the easyconfigs folder and save a copy of the R file to include intel18 in the name:
 
 ```
+cd ..
 cp R-4.4.1-gfbf-2023b.eb R-4.4.1-gfbf-2023b-intel18.eb
 ```
 
 
 ## 4. Install R
 
-Run the following command to install R-4.4.1 using the new .eb file on dev-intel18:
+Run the following command to install the new version of R-4.4.1 using the new .eb file on dev-intel18:
 
 ```
 eb --parallel=8 --robot ./easyconfigs/R-4.4.1-gfbf-2023b-intel18.eb
@@ -485,7 +492,7 @@ You should see a path that points to the intel18 install:
 ```
 /mnt/ufs18/home-067/nguye922/easybuild_local/software/software/R/4.4.1-gfbf-2023bintel18/bin/R
 ```
-
+As shown, both tutorials point to a path on the development node it was installed on - either intel16 or intel18.
 
 ## Optional Steps
 
