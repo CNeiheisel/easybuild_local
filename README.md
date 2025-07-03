@@ -246,9 +246,14 @@ The pull number will be found in the top left corner next to the blue “develop
 
 
 ## 3. Install the Software Using the Pull Request Number
-To download OpenFOAM from the pull request number, run eb --from-pr [pull request number] --robot
-In this case I would run eb --from-pr 22241 --robot. 
-
+To download OpenFOAM from the pull request number, run:
+```
+eb --from-pr [pull request number] --robot
+```
+For this version of OpenFOAM the command is: 
+```
+eb --from-pr 22241 --robot. 
+```
 ![image](https://github.com/user-attachments/assets/9dc3a108-e60f-454f-b700-e167579d7057)
 
 
