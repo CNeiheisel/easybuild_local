@@ -471,5 +471,5 @@ This command specifically updates the toolchain to see if download will be succe
 #### Editors
 
 Nick Panchy <br/>
-Connor Neiheisel 
+Connor Neiheisel <br/>
 Anna Nguyen
