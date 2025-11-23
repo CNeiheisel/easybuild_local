@@ -13,14 +13,14 @@ Slightly modified to fit our modules versions. Orginal source can be found at:
 https://github.com/easybuilders/easybuild-easyconfigs/blob/develop/easybuild/easyconfigs/h/Hello/Hello-2.10-GCCcore-8.2.0.eb
 """
 
-toolchain = {'name': 'GCCcore', 'version': '11.2.0'}
+toolchain = {'name': 'GCCcore', 'version': '12.3.0'}
 
 source_urls = [GNU_SOURCE]
 sources = [SOURCELOWER_TAR_GZ]
 checksums = ['31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b']
 
 builddependencies = [
-    ('binutils', '2.37'),
+    ('binutils', '2.40'),
 ]
 
 sanity_check_paths = {
